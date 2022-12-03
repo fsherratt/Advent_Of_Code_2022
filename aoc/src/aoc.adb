@@ -19,6 +19,7 @@ begin
 
    case Day_Num is
       when 1 => Day_1.Runner(Input_File_Path => Input_File);
+      when 2 => Day_2.Runner(Input_File_Path => Input_File);
 
       when others => Put_Line ("Error: Invalid Day");
    end case;
