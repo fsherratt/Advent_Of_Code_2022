@@ -1,0 +1,11 @@
+name = "aoc"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Freddie Sherratt"]
+maintainers = ["Freddie Sherratt <example@example.com>"]
+maintainers-logins = ["fsherratt"]
+
+executables = ["aoc"]
+[[depends-on]]
+gnatprove = "^12.1.1"
