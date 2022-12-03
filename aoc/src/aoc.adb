@@ -2,6 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Arg_Parse;
 with Day_1;
 with Day_2;
+with Day_3;
 
 procedure Aoc is
    Day_Num : constant Arg_Parse.Day := Arg_Parse.Get_Day ( Required => True );
@@ -20,6 +21,7 @@ begin
    case Day_Num is
       when 1 => Day_1.Runner(Input_File_Path => Input_File);
       when 2 => Day_2.Runner(Input_File_Path => Input_File);
+      when 3 => Day_3.Runner(Input_File_Path => Input_File);
 
       when others => Put_Line ("Error: Invalid Day");
    end case;
