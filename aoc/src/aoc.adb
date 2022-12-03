@@ -6,7 +6,7 @@ with Day_3;
 
 procedure Aoc is
    Day_Num : constant Arg_Parse.Day := Arg_Parse.Get_Day ( Required => True );
-   Input_File : constant String := Arg_Parse.Get_Filename ( Required => False );
+   Input_File : constant String := Arg_Parse.Get_Filename ( Required => True );
 begin
    if Arg_Parse.Help_Menu then
       return;
