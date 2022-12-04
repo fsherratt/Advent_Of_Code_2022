@@ -6,8 +6,10 @@ package body Day_3 is
    begin
       Load_Content(Input_File_Path => Input_File_Path);
       Score := Score_All_Backpack;
+      Put_Line ("Total Score" & Score'Image);
 
-      Put_Line (Score'Image);
+      Score := Score_All_Group_Backpack;
+      Put_Line ("Group Score" & Score'Image);
    end;
 
    procedure Load_Content (Input_File_Path : in String) is
