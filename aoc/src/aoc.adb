@@ -4,6 +4,7 @@ with Day_1;
 with Day_2;
 with Day_3;
 with Day_4;
+with Day_5;
 
 procedure Aoc is
    Day_Num : constant Arg_Parse.Day := Arg_Parse.Get_Day ( Required => True );
@@ -24,6 +25,7 @@ begin
       when 2 => Day_2.Runner(Input_File_Path => Input_File);
       when 3 => Day_3.Runner(Input_File_Path => Input_File);
       when 4 => Day_4.Runner(Input_File_Path => Input_File);
+      when 5 => Day_5.Runner(Input_File_Path => Input_File);
 
       when others => Put_Line ("Error: Invalid Day");
    end case;
