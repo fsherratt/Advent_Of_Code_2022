@@ -22,7 +22,6 @@ package body Day_3 is
 
       while not End_Of_File (Input_File) loop
          Get_Line (Input_File, Buffer, Len);
-         --  Put_Line (Buffer (1 .. Len));
 
          if len > 0 and len < Input_String'Last then
             declare
